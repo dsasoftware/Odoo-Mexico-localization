@@ -42,7 +42,7 @@ import sys
 import codecs
 from xml.dom import minidom
 import urllib
-import pooler
+from openerp import pooler
 from openerp.tools.translate import _
 from datetime import datetime, timedelta
 from pytz import timezone
