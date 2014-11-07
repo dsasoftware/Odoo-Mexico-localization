@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data noupdate="1">
+    <data>
         <!-- Invoices -->
         <record id="account_invoice_cfd0" model="account.invoice">
             <field name="payment_term" ref="account.account_payment_term"/>

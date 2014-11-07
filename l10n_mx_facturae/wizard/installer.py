@@ -25,6 +25,7 @@ from openerp.tools.translate import _
 from openerp.osv import fields, osv
 import base64
 from openerp import addons
+from openerp.modules import get_module_resource
 
 
 class facturae_config(osv.TransientModel):
@@ -37,7 +38,7 @@ class facturae_config(osv.TransientModel):
             context = {}
         defaults = super(facturae_config, self).default_get(
             cr, uid, fields_list=fields_list, context=context)
-        logo = open(addons.get_module_resource(
+        logo = open(get_module_resource(
             'l10n_mx_facturae', 'images', 'piramide_azteca.jpg'), 'rb')
         defaults['config_logo'] = base64.encodestring(logo.read())
         return defaults

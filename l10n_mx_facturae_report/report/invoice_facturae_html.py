@@ -33,7 +33,7 @@ from openerp import tests
 from openerp.osv import osv
 from openerp import netsvc
 import openerp
-from report_webkit import webkit_report
+from openerp.addons.report_webkit import webkit_report
 import datetime
 
 class invoice_facturae_html(report_sxw.rml_parse):

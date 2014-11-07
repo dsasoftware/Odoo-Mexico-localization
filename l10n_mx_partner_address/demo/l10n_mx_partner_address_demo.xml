@@ -13,7 +13,7 @@
             <field name="zip">85134</field>
             <field name="l10n_mx_city2">Ciudad Obregón</field>
             <field name="city">Cajeme</field>
-            <field name="state_id" ref="l10n_mx_states.res_country_state_mx_son" model="res.country.state"/>
+            <field name="state_id" ref="l10n_mx_states.res_country_state_mx_son"/>
             <field name="country_id" ref="base.mx"/>
             <!--<field name="type">invoice</field> Now not necessary-->
             <field name="email">info(at)vauxoo.com</field>

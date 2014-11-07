@@ -63,17 +63,19 @@
             <field name="name">view.params.pac.form</field>
             <field name="model">params.pac</field>
             <field name="arch" type="xml">
-                <form string="Parameters PAC">
-                    <field name="name"/>
-                    <field name="method_type"/>
-                    <field name="url_webservice"/>
-                    <field name="namespace"/>
-                    <field name="user"/>
-                    <field name="password" password="True"/>
-                    <field name="certificate_link" widget="url" />
-                    <field name="company_id" widget="selection" groups="base.group_multi_company"/>
-                    <field name="active"/>
-                    <field name="sequence"/>
+                <form string="Parameters PAC" version="7.0" >
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="method_type"/>
+                        <field name="url_webservice"/>
+                        <field name="namespace"/>
+                        <field name="user"/>
+                        <field name="password" password="True"/>
+                        <field name="certificate_link" widget="url" />
+                        <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+                        <field name="active"/>
+                        <field name="sequence"/>
+                    </group>
                 </form>
             </field>
         </record>
